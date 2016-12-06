@@ -1,14 +1,26 @@
-public class Calculator{
+public class Calculator {
 
-  private int result;
-
-  public void add(int ... params){
-    for (Integer param : params){
+  private double result; // result variable
+  //
+  public void add(double ... params){
+    for (Double param : params){
       this.result += param;
     }
   }
+  
+  public void divide(double first, double second){
+    this.result = first - second;
+  }
 
-  public int getResult(){
+  public void division(double first, double second){
+    this.result = first / second;
+  }
+
+  public void multy(double first, double second){
+    this.result = first * second;
+  }
+
+  public double getResult(){
     return this.result;
   }
 
